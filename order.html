@@ -1,0 +1,131 @@
+<!-- Step 1: Personal Details -->
+<div id="step1" class="w-full max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
+    
+    <h2 class="text-2xl font-semibold mb-4 text-gray-800">Step 1: Personal Details</h2>
+
+    <label class="block mb-3">
+        <span class="text-gray-700 font-medium">Full Name</span>
+        <input id="fullName" type="text" class="mt-1 block w-full border rounded-md p-2" placeholder="Enter your full name">
+    </label>
+
+    <label class="block mb-3">
+        <span class="text-gray-700 font-medium">Mobile Number</span>
+        <input id="mobile" type="tel" class="mt-1 block w-full border rounded-md p-2" placeholder="10-digit mobile number">
+    </label>
+
+    <label class="block mb-3">
+        <span class="text-gray-700 font-medium">Email Address</span>
+        <input id="email" type="email" class="mt-1 block w-full border rounded-md p-2" placeholder="example@gmail.com">
+    </label>
+
+    <label class="block mb-3">
+        <span class="text-gray-700 font-medium">Aadhaar Last 4 Digits</span>
+        <input id="aadhaar" type="number" maxlength="4" class="mt-1 block w-full border rounded-md p-2" placeholder="1234">
+    </label>
+
+    <label class="block mb-3">
+        <span class="text-gray-700 font-medium">PAN Number</span>
+        <input id="pan" type="text" class="mt-1 block w-full border rounded-md p-2 uppercase" placeholder="ABCDE1234F">
+    </label>
+
+    <label class="block mb-3">
+        <span class="text-gray-700 font-medium">Address</span>
+        <textarea id="address" class="mt-1 block w-full border rounded-md p-2" rows="3" placeholder="Full address"></textarea>
+    </label>
+
+    <label class="block mb-3">
+        <span class="text-gray-700 font-medium">State</span>
+        <input id="state" type="text" class="mt-1 block w-full border rounded-md p-2" placeholder="Kerala">
+    </label>
+
+    <label class="block mb-3">
+        <span class="text-gray-700 font-medium">PIN Code</span>
+        <input id="pin" type="number" class="mt-1 block w-full border rounded-md p-2" placeholder="682001">
+    </label>
+
+    <label class="block mb-3">
+        <span class="text-gray-700 font-medium">Select DSC Type</span>
+        <select id="dscType" class="mt-1 block w-full border rounded-md p-2">
+            <option value="">-- Select --</option>
+            <option value="individual">Class 3 Individual DSC (with Token)</option>
+            <option value="organization">Class 3 Organization DSC (with Token)</option>
+            <option value="renewal">Renewal</option>
+            <option value="only_dsc">Only DSC</option>
+            <option value="only_token">Only Token</option>
+        </select>
+    </label>
+
+    <div id="renewalTokenDiv" class="hidden mb-4">
+        <label class="block mb-3">
+            <span class="text-gray-700 font-medium">Do you have a working USB Token?</span>
+            <select id="renewalToken" class="mt-1 block w-full border rounded-md p-2">
+                <option value="">-- Select --</option>
+                <option value="yes">Yes, I have a working token</option>
+                <option value="no">No, I need a new token</option>
+            </select>
+        </label>
+    </div>
+
+    <button id="btnStep1Next" class="w-full bg-blue-600 text-white py-2 rounded-md mt-4 hover:bg-blue-700">
+        Continue to Document Upload →
+    </button>
+
+</div>
+
+<!-- Step 2: Document Upload -->
+<div id="step2" class="w-full max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md hidden">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-800">Step 2: Document Upload</h2>
+
+    <!-- Info -->
+    <p class="text-sm text-gray-600 mb-4">
+        Please upload clear, readable copies of the required documents. Supported formats: PDF, JPG, PNG.
+    </p>
+
+    <!-- Aadhaar -->
+    <label class="block mb-3">
+        <span class="text-gray-700 font-medium">Aadhaar (Front/Back or PDF)</span>
+        <input id="aadhaarFile" type="file" accept=".pdf,.jpg,.jpeg,.png" class="mt-1 block w-full">
+    </label>
+
+    <!-- PAN -->
+    <label class="block mb-3">
+        <span class="text-gray-700 font-medium">PAN Card</span>
+        <input id="panFile" type="file" accept=".pdf,.jpg,.jpeg,.png" class="mt-1 block w-full">
+    </label>
+
+    <!-- Photo -->
+    <label class="block mb-3">
+        <span class="text-gray-700 font-medium">Passport Size Photo</span>
+        <input id="photoFile" type="file" accept=".jpg,.jpeg,.png" class="mt-1 block w-full">
+    </label>
+
+    <!-- Authorization Letter (Org only) -->
+    <div id="authLetterDiv" class="hidden">
+        <label class="block mb-3">
+            <span class="text-gray-700 font-medium">Authorization Letter (for Organization DSC)</span>
+            <input id="authLetterFile" type="file" accept=".pdf,.jpg,.jpeg,.png" class="mt-1 block w-full">
+        </label>
+    </div>
+
+    <!-- Only Token note -->
+    <p id="onlyTokenNote" class="hidden text-sm text-yellow-700 bg-yellow-50 border border-yellow-200 rounded-md p-3 mb-4">
+        You selected <strong>Only Token</strong>. Document upload is not required. You can continue to payment.
+    </p>
+
+    <!-- Status -->
+    <div id="uploadStatus" class="text-sm text-gray-600 mb-3"></div>
+
+    <!-- Buttons -->
+    <div class="flex gap-3 mt-4">
+        <button id="btnStep2Back" class="flex-1 bg-gray-200 text-gray-800 py-2 rounded-md hover:bg-gray-300">
+            ← Back to Personal Details
+        </button>
+        <button id="btnStep2Next" class="flex-1 bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700">
+            Upload & Continue to Payment →
+        </button>
+    </div>
+</div>
+
+
+<!-- Load external JS -->
+<script src="/assets/js/order.js"></script>

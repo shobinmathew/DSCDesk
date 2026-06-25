@@ -5,21 +5,37 @@ A simple, clean, scalable coding standard for the DSC Desk project.
 This ensures consistency, maintainability, and professional engineering practices across all pages.
 
 🗂️ 1. Project Structure
-Code
-/assets
-    /css
-        tailwind.css
-        order.css
-    /js
+
+Repository root (overview):
+
+```
+about.html
+contact.html
+index.html
+order.html
+README.md
+assets/
+    css/
+        style.css
+    images/
+    js/
+        order.js
+        functions/
+            api.js
+functions/
+    api.js
+    api/
+        hello.js
         order.js
         upload.js
-        payment.js
-    /img
-        logo.png
-        icons.svg
-
-/order.html
-/admin/orders.html
+        admin/
+            orders.js
+        file/
+            [id].js
+includes/
+    footer.html
+    header.html
+```
 Rules:
 
 All folders lowercase

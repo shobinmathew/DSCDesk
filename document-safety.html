@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document Safety Policy – DSC Desk</title>
+
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <!-- Tailwind (Alternate CDN) -->
+  <script src="https://unpkg.com/tailwindcss-cdn"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css?v=2">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header Include -->
+  <div id="header"></div>
+  <script>
+    fetch("/includes/header.html?v=3")
+      .then(r => r.text())
+      .then(html => document.getElementById("header").innerHTML = html)
+  </script>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 mt-10">
+    <div class="bg-white shadow-lg rounded-xl p-8">
+
+      <h1 class="text-3xl font-bold text-blue-700 mb-6">
+        Document Safety Policy
+      </h1>
+
+      <p class="text-gray-700 mb-6">
+        At <strong>DSC Desk</strong>, your privacy and data safety are extremely important to us.  
+        We are an <strong>Authorized Partner / Sub‑RA of eMudhra</strong> for Digital Signature Certificate (DSC) services.  
+        All Aadhaar eKYC, document verification, and DSC issuance are performed securely on the official 
+        <strong>eMudhra portal</strong> as per CCA guidelines.
+      </p>
+
+
+      <!-- Section 1 -->
+      <h2 class="text-xl font-semibold text-blue-600 mt-6 mb-2">1. Information We Collect</h2>
+      <p class="text-gray-700 mb-4">
+        DSC Desk does <strong>not</strong> collect or store any identity documents such as Aadhaar, PAN, 
+        address proof, photographs, or signatures.  
+        We only collect the basic details required to create your DSC order:
+      </p>
+      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+        <li>Full Name</li>
+        <li>Mobile Number</li>
+        <li>Email Address</li>
+      </ul>
+      <p class="text-gray-700 mt-4">
+        All further verification is completed directly on the Certifying Authority (CA) portal.
+      </p>
+
+      <!-- Section 2 -->
+      <h2 class="text-xl font-semibold text-blue-600 mt-6 mb-2">2. No Document Upload on Our Website</h2>
+      <p class="text-gray-700 mb-4">
+        We do <strong>not</strong> ask you to upload any documents on our website.  
+        All Aadhaar eKYC, PAN verification, and document submission happen securely on the CA portal.
+      </p>
+      <p class="text-gray-700 mt-4">
+        Since DSC Desk is an <strong>Authorized eMudhra Partner</strong>, all verification steps are completed 
+        directly on the eMudhra system. We do not collect or store any identity documents.
+      </p>
+
+
+      <!-- Section 3 -->
+      <h2 class="text-xl font-semibold text-blue-600 mt-6 mb-2">3. How Verification Happens</h2>
+      <p class="text-gray-700 mb-4">
+        Once your order is created, you receive a secure link from the Certifying Authority (CA) to complete:
+      </p>
+      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+        <li>Aadhaar OTP eKYC</li>
+        <li>Video KYC (if required)</li>
+        <li>Document upload (if required by CA)</li>
+      </ul>
+      <p class="text-gray-700 mt-4">
+        DSC Desk does not access or store any of these documents.
+      </p>
+
+      <!-- Section 4 -->
+      <h2 class="text-xl font-semibold text-blue-600 mt-6 mb-2">4. No Storage of Sensitive Documents</h2>
+      <p class="text-gray-700 mb-4">
+        Since all verification happens directly on the CA portal:
+      </p>
+      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+        <li>We do not store your Aadhaar</li>
+        <li>We do not store your PAN</li>
+        <li>We do not store your address proof</li>
+        <li>We do not store your photo or signature</li>
+      </ul>
+
+      <!-- Section 5 -->
+      <h2 class="text-xl font-semibold text-blue-600 mt-6 mb-2">5. Compliance With Legal Standards</h2>
+      <p class="text-gray-700 mb-4">
+        All verification and document handling are performed by licensed Certifying Authorities in compliance with:
+      </p>
+      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+        <li>CCA (Controller of Certifying Authorities) guidelines</li>
+        <li>IT Act 2000</li>
+        <li>Certifying Authority (CA) verification rules</li>
+      </ul>
+
+      <!-- Section 6 -->
+      <h2 class="text-xl font-semibold text-blue-600 mt-6 mb-2">6. Your Rights</h2>
+      <p class="text-gray-700 mb-4">
+        Since DSC Desk does not store your documents, you may directly request the Certifying Authority for:
+      </p>
+      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+        <li>Deletion of uploaded documents</li>
+        <li>Correction of personal details</li>
+        <li>Information on how your documents were used</li>
+      </ul>
+
+      <!-- Section 7 -->
+      <h2 class="text-xl font-semibold text-blue-600 mt-6 mb-2">7. Contact Us</h2>
+      <p class="text-gray-700">
+        For any document safety concerns, contact us at:<br>
+        <strong>Email:</strong> support@dscdesk.online<br>
+        <strong>WhatsApp:</strong> +91 75599 19879
+      </p>
+
+    </div>
+  </main>
+
+  <!-- Footer Include -->
+  <div id="footer" class="mt-10"></div>
+  <script>
+    fetch("/includes/footer.html?v=3")
+      .then(r => r.text())
+      .then(html => document.getElementById("footer").innerHTML = html)
+  </script>
+
+</body>
+</html>

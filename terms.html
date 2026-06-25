@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Terms & Conditions – DSC Desk</title>
+
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <!-- Tailwind (Alternate CDN) -->
+  <script src="https://unpkg.com/tailwindcss-cdn"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css?v=2">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header Include -->
+  <div id="header"></div>
+  <script>
+    fetch("/includes/header.html?v=2")
+      .then(r => r.text())
+      .then(html => document.getElementById("header").innerHTML = html)
+  </script>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 mt-10">
+    <div class="bg-white shadow-lg rounded-xl p-8">
+
+      <h1 class="text-3xl font-bold text-blue-700 mb-6">
+        Terms & Conditions
+      </h1>
+
+      <p class="text-gray-700 mb-6">
+        These Terms & Conditions govern your use of the services provided by <strong>DSC Desk</strong>. 
+        By applying for a Digital Signature Certificate (DSC) through our platform, you agree to the 
+        terms outlined below.
+      </p>
+
+      <!-- Section 1 -->
+      <h2 class="text-xl font-semibold text-blue-600 mt-6 mb-2">1. Service Overview</h2>
+      <p class="text-gray-700 mb-4">
+        DSC Desk facilitates the application and issuance of Digital Signature Certificates through 
+        licensed Certifying Authorities (CA). We act as a service provider to simplify the DSC 
+        application process.
+      </p>
+
+      <!-- Section 2 -->
+      <h2 class="text-xl font-semibold text-blue-600 mt-6 mb-2">2. Eligibility</h2>
+      <p class="text-gray-700 mb-4">
+        To apply for a DSC, you must:
+      </p>
+      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+        <li>Be an Indian citizen or authorized representative of an organization</li>
+        <li>Provide valid identity and address proof</li>
+        <li>Complete Aadhaar eKYC or video verification as required</li>
+      </ul>
+
+      <!-- Section 3 -->
+      <h2 class="text-xl font-semibold text-blue-600 mt-6 mb-2">3. Accuracy of Information</h2>
+      <p class="text-gray-700 mb-4">
+        You are responsible for providing accurate and complete information. Any incorrect or 
+        fraudulent information may result in:
+      </p>
+      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+        <li>Rejection of DSC application</li>
+        <li>Delays in processing</li>
+        <li>Legal action as per CCA/IT Act guidelines</li>
+      </ul>
+
+      <!-- Section 4 -->
+      <h2 class="text-xl font-semibold text-blue-600 mt-6 mb-2">4. Document Handling</h2>
+      <p class="text-gray-700 mb-4">
+        All documents submitted for DSC processing are handled securely. Documents are:
+      </p>
+      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+        <li>Used only for DSC verification</li>
+        <li>Shared only with licensed Certifying Authorities</li>
+        <li>Deleted after DSC issuance as per our Privacy Policy</li>
+      </ul>
+
+      <!-- Section 5 -->
+      <h2 class="text-xl font-semibold text-blue-600 mt-6 mb-2">5. Payment & Fees</h2>
+      <p class="text-gray-700 mb-4">
+        All payments made for DSC services are final. Fees cover:
+      </p>
+      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+        <li>Verification and processing charges</li>
+        <li>Certifying Authority fees</li>
+        <li>Service and support charges</li>
+      </ul>
+
+      <!-- Section 6 -->
+      <h2 class="text-xl font-semibold text-blue-600 mt-6 mb-2">6. Refund Policy</h2>
+      <p class="text-gray-700 mb-4">
+        Refunds are not applicable once:
+      </p>
+      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+        <li>Documents are submitted for verification</li>
+        <li>Application is processed by the Certifying Authority</li>
+      </ul>
+      <p class="text-gray-700 mb-4">
+        Refunds may be considered only in cases of duplicate payment or technical errors.
+      </p>
+
+      <!-- Section 7 -->
+      <h2 class="text-xl font-semibold text-blue-600 mt-6 mb-2">7. Processing Time</h2>
+      <p class="text-gray-700 mb-4">
+        DSC issuance time depends on:
+      </p>
+      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+        <li>Verification method (Aadhaar eKYC / Video KYC)</li>
+        <li>Certifying Authority processing speed</li>
+        <li>Accuracy of documents submitted</li>
+      </ul>
+
+      <!-- Section 8 -->
+      <h2 class="text-xl font-semibold text-blue-600 mt-6 mb-2">8. Limitation of Liability</h2>
+      <p class="text-gray-700 mb-4">
+        DSC Desk is not responsible for:
+      </p>
+      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+        <li>Delays caused by Certifying Authorities</li>
+        <li>Incorrect documents submitted by the applicant</li>
+        <li>Technical issues beyond our control</li>
+      </ul>
+
+      <!-- Section 9 -->
+      <h2 class="text-xl font-semibold text-blue-600 mt-6 mb-2">9. Changes to Terms</h2>
+      <p class="text-gray-700 mb-4">
+        DSC Desk reserves the right to update these Terms & Conditions at any time. Changes will be 
+        posted on this page.
+      </p>
+
+      <!-- Section 10 -->
+      <h2 class="text-xl font-semibold text-blue-600 mt-6 mb-2">10. Contact Information</h2>
+      <p class="text-gray-700">
+        For any questions regarding these Terms, contact us at:<br>
+        <strong>Email:</strong> support@dscdesk.online<br>
+        <strong>WhatsApp:</strong> +91 75599 19879
+      </p>
+
+    </div>
+  </main>
+
+  <!-- Footer Include -->
+  <div id="footer" class="mt-10"></div>
+  <script>
+    fetch("/includes/footer.html?v=2")
+      .then(r => r.text())
+      .then(html => document.getElementById("footer").innerHTML = html)
+  </script>
+
+</body>
+</html>

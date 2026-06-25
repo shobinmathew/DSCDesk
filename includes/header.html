@@ -1,20 +1,71 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="/index.html">
-      <img src="/assets/images/logo.png" class="logo me-2">
-      <strong>DSC Desk</strong>
-    </a>
+<header class="bg-blue-700 text-white sticky top-0 z-[9999] shadow-md relative">
+  <div class="container mx-auto px-4 py-3 flex items-center justify-between">
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
+    <!-- Logo + Tagline -->
+    <div class="flex flex-col">
+      <a href="/index.html" class="text-2xl font-bold tracking-wide">DSC Desk</a>
+      <span class="text-xs text-blue-100">Authorized Partner / Sub‑RA of eMudhra</span>
+    </div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden lg:flex items-center gap-8 font-medium">
+
+      <a href="/index.html" class="hover:text-gray-200">Home</a>
+      <a href="/about.html" class="hover:text-gray-200">About</a>
+      <a href="/services.html" class="hover:text-gray-200">Services</a>
+      <a href="/contact.html" class="hover:text-gray-200">Contact</a>
+
+      <!-- More Dropdown -->
+      <div class="relative">
+        <button class="hover:text-gray-200 peer">More ▾</button>
+
+        <ul class="absolute hidden peer-hover:block hover:block bg-white text-gray-800 shadow-lg rounded-md mt-2 w-52 right-0 z-[99999]"
+            style="pointer-events:auto;">
+          <li><a href="/faq.html" class="block px-4 py-2 hover:bg-gray-100">FAQ</a></li>
+          <li><a href="/privacy.html" class="block px-4 py-2 hover:bg-gray-100">Privacy Policy</a></li>
+          <li><a href="/terms.html" class="block px-4 py-2 hover:bg-gray-100">Terms & Conditions</a></li>
+          <li><a href="/document-safety.html" class="block px-4 py-2 hover:bg-gray-100">Document Safety</a></li>
+          <li><a href="/refund-policy.html" class="block px-4 py-2 hover:bg-gray-100">Refund Policy</a></li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="lg:hidden text-3xl focus:outline-none">
+      ☰
     </button>
 
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="/about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
-      </ul>
-    </div>
   </div>
-</nav>
+
+  <!-- Mobile Menu -->
+  <nav id="mobileMenu" class="hidden flex-col bg-blue-800 text-white px-6 py-4 space-y-3 lg:hidden">
+
+    <a href="/index.html" class="block">Home</a>
+    <a href="/about.html" class="block">About</a>
+    <a href="/services.html" class="block">Services</a>
+    <a href="/contact.html" class="block">Contact</a>
+
+    <!-- More Accordion -->
+    <details class="text-white">
+      <summary class="cursor-pointer py-2">More</summary>
+      <ul class="pl-4 space-y-2 mt-2">
+        <li><a href="/faq.html" class="block">FAQ</a></li>
+        <li><a href="/privacy.html" class="block">Privacy Policy</a></li>
+        <li><a href="/terms.html" class="block">Terms & Conditions</a></li>
+        <li><a href="/document-safety.html" class="block">Document Safety</a></li>
+        <li><a href="/refund-policy.html" class="block">Refund Policy</a></li>
+      </ul>
+    </details>
+
+  </nav>
+</header>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>

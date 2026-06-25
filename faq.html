@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ – DSC Desk</title>
+
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <!-- Tailwind (Alternate CDN) -->
+  <script src="https://unpkg.com/tailwindcss-cdn"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css?v=3">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header Include -->
+  <div id="header"></div>
+  <script>
+    fetch("/includes/header.html?v=3")
+      .then(r => r.text())
+      .then(html => document.getElementById("header").innerHTML = html)
+  </script>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 mt-10">
+    <div class="bg-white shadow-lg rounded-xl p-8">
+
+      <h1 class="text-3xl font-bold text-blue-700 mb-6">
+        Frequently Asked Questions (FAQ)
+      </h1>
+
+      <p class="text-gray-700 mb-6">
+        Here are the most common questions customers ask about Digital Signature Certificates (DSC) 
+        and our services at <strong>DSC Desk</strong>.  
+        We are an <strong>Authorized Partner / Sub‑RA of eMudhra</strong>, ensuring secure and 
+        government‑approved DSC issuance.
+      </p>
+
+      <!-- FAQ Item -->
+      <div class="mb-6">
+        <h2 class="text-xl font-semibold text-blue-600">1. What is a Digital Signature Certificate (DSC)?</h2>
+        <p class="text-gray-700 mt-2">
+          A DSC is a secure digital key issued by a Certifying Authority (CA) such as eMudhra.  
+          It is used for signing documents, filing GST, MCA, Income Tax, PF, and other online services.
+        </p>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="mb-6">
+        <h2 class="text-xl font-semibold text-blue-600">2. Are you authorized to issue DSC?</h2>
+        <p class="text-gray-700 mt-2">
+          Yes. DSC Desk is an <strong>Authorized Partner / Sub‑RA of eMudhra</strong>.  
+          All verification and DSC issuance happen through the official eMudhra portal.
+        </p>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="mb-6">
+        <h2 class="text-xl font-semibold text-blue-600">3. How can I verify that you are an eMudhra Partner?</h2>
+        <p class="text-gray-700 mt-2">
+          Customers can verify our partnership in the following ways:
+        </p>
+        <ul class="list-disc pl-6 text-gray-700 space-y-1 mt-2">
+          <li>You will receive your DSC verification link from <strong>https://services.e-mudhra.com</strong></li>
+          <li>You may email eMudhra at <strong>support@emudhra.com</strong> to confirm our Partner ID</li>
+          <li>Only authorized partners can create DSC orders on the eMudhra RA portal</li>
+        </ul>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="mb-6">
+        <h2 class="text-xl font-semibold text-blue-600">4. What information do you collect?</h2>
+        <p class="text-gray-700 mt-2">
+          We follow a strict “minimum data collection” policy.  
+          We only collect:
+        </p>
+        <ul class="list-disc pl-6 text-gray-700 space-y-1 mt-2">
+          <li>Full Name</li>
+          <li>Mobile Number</li>
+          <li>Email Address</li>
+        </ul>
+        <p class="text-gray-700 mt-2">
+          We <strong>do not</strong> collect Aadhaar, PAN, address proof, or any documents.  
+          All verification happens directly on the eMudhra portal.
+        </p>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="mb-6">
+        <h2 class="text-xl font-semibold text-blue-600">5. How does the DSC application process work?</h2>
+        <p class="text-gray-700 mt-2">
+          The process is simple:
+        </p>
+        <ul class="list-disc pl-6 text-gray-700 space-y-1 mt-2">
+          <li>You provide your name, mobile, and email</li>
+          <li>You receive a secure eMudhra link</li>
+          <li>You complete Aadhaar OTP eKYC or Video KYC</li>
+          <li>eMudhra issues your DSC</li>
+        </ul>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="mb-6">
+        <h2 class="text-xl font-semibold text-blue-600">6. How long does it take to get a DSC?</h2>
+        <p class="text-gray-700 mt-2">
+          Most DSCs are issued within <strong>10–30 minutes</strong> after successful eKYC.  
+          Video KYC may take slightly longer depending on CA processing.
+        </p>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="mb-6">
+        <h2 class="text-xl font-semibold text-blue-600">7. Do you store my documents?</h2>
+        <p class="text-gray-700 mt-2">
+          No. DSC Desk does <strong>not</strong> store Aadhaar, PAN, address proof, or any documents.  
+          All verification happens securely on the eMudhra portal.
+        </p>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="mb-6">
+        <h2 class="text-xl font-semibold text-blue-600">8. What is your refund policy?</h2>
+        <p class="text-gray-700 mt-2">
+          Refunds are available only for:
+        </p>
+        <ul class="list-disc pl-6 text-gray-700 space-y-1 mt-2">
+          <li>Duplicate payments</li>
+          <li>Failed transactions</li>
+        </ul>
+        <p class="text-gray-700 mt-2">
+          Once documents are submitted on the eMudhra portal or verification has started,  
+          refunds are <strong>not applicable</strong>.
+        </p>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="mb-6">
+        <h2 class="text-xl font-semibold text-blue-600">9. How do I contact support?</h2>
+        <p class="text-gray-700 mt-2">
+          You can reach us anytime at:<br>
+          <strong>Email:</strong> support@dscdesk.online<br>
+          <strong>WhatsApp:</strong> +91 75599 19879
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer Include -->
+  <div id="footer" class="mt-10"></div>
+  <script>
+    fetch("/includes/footer.html?v=3")
+      .then(r => r.text())
+      .then(html => document.getElementById("footer").innerHTML = html)
+  </script>
+
+</body>
+</html>
